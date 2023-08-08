@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>my first assignment</title>
+
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+</div>
+<body>
+
+
+
+<div class="header mySlides fade"style="background-image:url('swamy.gif');height:240px;">
+ <p class="header ani" style="font-size:50px; text-decoration:underline wavy black 2px "><b>LEE WEAR</b></P>
+<h4 style="text-decoration:underline wavy black 2px;">Alayam of jeans</h4>
+ </div>
+
+<div class="header mySlides fade" style="background-image:url('swa.jpg');height:240px;">
+<p class="header ani" style="font-size:50px; text-decoration:underline wavy black 2px "><b>LEE WEAR</b></P>
+<h4 style="text-decoration:underline wavy black 2px;">Alayam of jeans</h4>
+  </div>
+
+<div class="header mySlides fade" style="background-image:url('swa1.jpg');height:240px;">
+ <p class="header ani" style="font-size:50px; text-decoration:underline wavy black 2px "><b>LEE WEAR</b></P>
+<h4 style="text-decoration:underline wavy black 2px;">Alayam of jeans</h4>
+<span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div>
+<ul>
+<img class="c" src="swamy1.jpg" width="250" height="50" style="margin-left:700px;">
+<li><a href="./leewear.html" class="active"><i class="fa fa-home " >Home</i></a></li>
+<li><a href="./allproducts.html">All product</a></li>
+<li><a href="./newmodel.html">New models</a></li>
+<li><a href="./aboutus.html" >About us</a></li>
+<li><a href="./portfolio.html">Portfolio</a></li>
+
+</ul>
+</div>
+
+<div class="row">
+
+<div class="side">
+<h2 style="text-decoration:underline dotted black 3px">About LEE</h2>
+<h5 style="text-decoration:underline wavy black 2px">Photo of Lee wear:</h5>
+<div  style="width:100%;height:200px;padding:20x;background:orange;">
+<img src="my.gif" style="width:100%;height:200px;"></div>                                                         
+<p>Lee is an American brand of denim jeans, first produced in 1889 in Salina, Kansas. The company is owned by Kontoor Brands, a spin-off of VF Corporation's Jeanswear Division.</p>
+    <h3 style="text-decoration:underline dotted black 3px">collection of Jeans </h3>
+<center><h4 style="text-decoration:underline wavy black 2px">Best colored jean for mens</center></h4>	
+
+<div class="d">
+<img src="jean1.gif" style="width:100%;height:90px;"><br>
+</div> 
+
+
+<div  class="d">
+<img src="jean2.jpg" style="width:100%;height:90px;">
+</div>
+
+<div class="d">
+<img src="jean3.jpg" style="width:100%;height:90px;">
+</div>
+
+<div class="d">
+<img src="jean6.jpg" style="width:100%;height:90px;">
+</div>
+<div class="d"><img src="slogan.jpg"style="width:100%;height:130px;"></div>					
+</div>
+
+<div class="main">
+<div ><img src="emoj.gif"style="width:50%;height:405px;float:right;"></div>
+
+<h2 style="text-decoration:underline dotted black 3px">Latest modren jeans</h2>
+
+<h5 class="b">new collection,flexible size</h5>
+
+<p class="b a"><b>cost:<s >&#8377;699</s>&nbsp;&#128525;&nbsp;&#8377;499</b></p>
+
+<div  style="background:blue;width:48%;height:220px;padding:20x;">
+<img src="jean4.gif" style="width:100%;height:220px;">
+</div>
+
+<p> These comfortable pants can be explored online as many top brands provide a huge collection of denim in various sizes and patterns. 
+Pick from colours like dark blue, light blue, black, white, grey, beige, brown and much more shades. 
+You can opt for the classic dark blue one as this is the most versatile pair of jeans for men as it is suitable for several occasions. 
+Pair them up with a button-down shirt or a sports jacket with your stylish sneakers to complete the look. 
+Black denim is a great alternative to dark blue denim. 
+<blockquote>
+Some of the materials used in making these wranglers are 100% organic cotton, 77% cotton and 21% polyester, fleece blend, dupion silk, printed corduroy, and velvet.
+You can get these men’s clothing in packs of 1 and 2; even sets of 3-6, 7-10, and above 10 are available. 
+Brands like <b><q>Mast & Harbour, Spykar, Warburg, Hymen Legions, Canary London,</q> and others sell jeans online.</b>
+Check user ratings and reviews and make your choice accordingly. </blockquote>
+
+<div> <img src="jean5.jpg" width="100%"></div>
+<p style="border-style:dotted;margin-right:385px;background:LavenderBlush;">*The information you are reading has been last updated on 10-May-23.*</p>
+</div>
+</div>
+</body>
+
+<footer class="footer"> 
+<center><a href="https://leejeans.com.au/">Designed by Swamy</a></center></footer>
+</html>
